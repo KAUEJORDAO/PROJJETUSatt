@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Solicitado</title>
+    <link rel="stylesheet" href="css/fonte.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerhome.css">
+    <link rel="stylesheet" href="css/paginacatalogo.css">
+
+    <style>
+        *{
+               margin: 0;
+               padding: 0;
+       
+           }
+       
+           .botaocadastro button{
+           margin-top: 0px;  
+           }
+       
+           .botaologin{
+           margin-top: 0px;
+           }
+           
+           .menuicone{
+               margin-bottom: 10px;
+           }
+       
+           
+       
+           .navbar{
+               display: flex;
+               padding: 0px;
+               padding-top: 0px;
+               background-color: rgba(0, 0, 0, 0);
+           
+               justify-content: space-between;
+               align-items: center;
+           
+               
+               transition: .3s;
+               
+           }
+       
+          
+       
+       
+       
+       
+          
+           .conteudoclientefreelancer{
+               background-color:#4E345C;
+               width: 100%;
+               height: 100%;
+           }
+           .conteudoclientefreelancer > div{
+               display: flex;
+               flex-direction: row;
+           }
+       
+           .informacoesfreelancer{
+               padding-top: 10vh;
+               width: 20%;
+               height: 90vh;
+               background-color: #151515;
+               color: white;
+               text-align: center;
+               
+               
+               
+               
+           }
+           
+           .listarconteiner > img{
+               margin-top: 20px;
+               border-radius: 100%;
+               height: 20vh;
+               width: 10vw;
+           }
+       
+           .informacoesfreelancer > p,h4,button{
+               margin-top: 15px;
+           }
+       
+           .informacoesfreelancer > h1{
+               margin-top: 20%;
+           }
+       
+           .informacoesfreelancer > button{
+               border: none;
+               padding: 5% 10%;
+               border-radius: 30px;
+               color: white;
+               background-color: #00ff087c;
+           }
+       
+           .linhahorizontalcentral{
+                   margin-top: 20px;
+           }
+       
+           .conteudoclientefreelancerlateral{
+               height: 77vh;
+               background-color: #1515159f;
+               width: 90%;
+               
+               margin: 10% 2% 0% 2%;
+               border-radius: 10px;
+              
+           }
+       
+           .conteudoclientefreelancerlateraldiv1{
+               
+               display: flex;
+               height: 20%;
+               color: white;
+               font-size: 30px;
+               align-items: center;
+               justify-content: center;
+               
+           }
+       
+       
+           .conteudoclientefreelancerlateraldiv2{
+               display: flex;
+               flex-direction: row;
+               height: 80%;
+               
+           }
+           .conteudoclientefreelancerlateraldiv2 > div{
+               width: 50%;
+               border-right: 1px solid rgb(92, 92, 92);
+               border-top: 1px solid rgb(92, 92, 92);
+               color: white;
+               
+           }
+       
+           .conteudoclientefreelancerlateraldiv2 > div > h2{
+               height: 20%;
+               display: flex;
+               justify-content: center;
+               align-items: center;        
+           }
+       
+           .conteudoclientefreelancerlateraldiv2 > div > p{
+               height: 50%;
+               background-color: rgb(255, 255, 255);
+               display: flex;
+               align-items: center;  
+               color: rgba(0, 0, 0, 0.397); 
+               margin: 20px;     
+           }
+       
+           .conteudoclientefreelancerlateraldiv2 > div > div{
+               height: 20%;
+               display: flex;
+               justify-content: end;
+               margin-right: 15px;
+               border-right: none;
+                      
+           }
+       
+           .botaoclientefreelancer{
+               margin-top: 10px;
+               margin-right: 10px;
+               height: 50px;
+               background-color: rgba(0, 0, 0, 0.096);
+               color: white;
+               font-size: clamp(8px, 4px + 1vw, 50px);
+               padding: 1%;
+               letter-spacing: .5px;
+               margin: 2px;
+           }
+       
+           .ofertaaceita{
+               background-color:#17720046 ;
+           }
+           .ofertarecusada{
+               background-color:#bc000046 ;    }
+           </style>
+
+</head>
+
+<body>
+    <header id="header"> 
+      <nav class="navbar">
+
+              <div class="espacologo">
+                  <div class="menuicone" onclick="menuAbrir()">
+                      <button><img src="img/assets/menu.png" alt=""></button>
+                  </div>
+                  
+                  <div class="logo">
+                      <a href="index.html"><h1>PROJETTUS</h1></a>
+                  </div>
+              </div>
+         
+              
+              <div class="espaco2">
+                  <div class="botaocadastro">
+                      <button onclick="menuCadastroAbrir()"><em>Cadastre-se</em></button>
+                  </div>
+
+
+                  <div >
+                      <button class="carrinho"><a href="Pedidos Pendentes.html"> <img src="img/assets/carrinho.png" alt="" class="imgcarrinho"></a></button>
+                  </div>
+
+
+                  <div>
+                      <button class="notificaçao"><img src="img/assets/notificacao.png" alt="" class="imgnotificaçao"></button>
+                  </div>
+
+                  
+                  <div >
+                      <button class="botaologin" onclick="menuLoginAbrir()"><a href="#" ><img src="img/assets/pessoa.png" alt="" class="imgdim"></a></button>
+                  </div>
+              </div>
+
+      </nav>
+      <div class="menusuperior">
+          <ul>
+              <h2>MENU</h2>
+              <div class="linhasuperior"></div>
+              <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+              <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+              <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+              <li class="navitem">  <a href="#" class="navlink">Freelancer</a></li>
+              <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+              <li class="navitem"><a href="Solicite Servico.html" class="navlink">Solicite Serviço</a></li>
+              
+          </ul>
+      </div>
+  </header>
+  
+  <section>
+      <div class="conteudoclientefreelancer">
+          <div>
+              <div class="informacoesfreelancer">
+                  <h1>Informações do freelancer</h1>
+                  <div class="linhahorizontalcentral"></div>
+  
+                  <div class="listarconteiner">
+                      <img src="img/assets/pessoaroxa.png" alt="">
+                  </div>
+                  
+  
+                  <p>Nome</p>
+                  <p>Profissão</p>
+                  <p>País</p>
+                  <p>idioma(s)</p>
+                  <div class="linhahorizontalcentral"></div>
+                  <h4>Status do Pedido</h4>
+                  <button>Aceito</button>
+              </div>
+              <div class="conteudoclientefreelancerlateral">
+                  <div class="conteudoclientefreelancerlateraldiv1">
+                      <h1>Serviço Solicitado</h1>
+                  </div>
+                  <div class="conteudoclientefreelancerlateraldiv2">
+                      <div>
+                          <h2>Cliente</h2>
+                          <p>Aqui tera uma breve descrição do problema que o cliente precisa resolver com máximo de informações possíveis do problema, anexar imagem do problema caso tenha como, etc.” também conterá nome do cliente localização”</p>
+                          <div>
+                              <button class="botaoclientefreelancer ">Salvar</button>
+                              <button class="botaoclientefreelancer ">Editar</button>
+                              <button class="botaoclientefreelancer ">Cancelar</button>
+                          </div>
+                      </div>
+                      <div>
+                          <h2>Freelancer</h2>
+                          <p>Aqui tera algo falando sobre custo adicional devido ao problema indicado pelo usuário e horário que o freelancer tem disponível, além de ter algo indicando se o freelancer aceitou o trabalho após ler a descrição do cliente, etc...tera 3 estados: <br> verde: PEDIDO ACEITO <br> amarelo: PEDIDO PENDENTE <br> vermelho: PEDIDO RECUSADO</p>
+                          <div>
+                              <button class="botaoclientefreelancer ofertaaceita">Aceitar Oferta</button>
+                              <button onclick="abrirPedidosPendentesMenu()" class="botaoclientefreelancer ofertarecusada">Recusar Oferta</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script src="js/headerhome.js"></script>
+</body>
+</html>

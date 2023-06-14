@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pedidospendentesinformacoes.css">
+    <link rel="stylesheet" href="/css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="/css/telaregistro.css">
+    <link rel="stylesheet" href="/css/telalogin.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .linhahorizontalcentral{
+            margin-top: 20px; 
+        }
+
+        .pedidosatuais{
+            border: 1px solid black;
+            width: 80%;
+            margin: 0% 10%;
+        }
+        .pedidosatuais > h1 {
+            padding: 20px 0px;
+            font-size: large;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .pedidosatuais > div{
+            display: flex;
+            padding: 1% 1%;
+            border-bottom: 1px solid black;
+        }
+
+        .pedidosatuais > div > h1 {
+            font-size: large;
+            width: 80%;
+        }
+        .pedidosatuais > div > p {
+            font-size: large;
+            width: 20%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="menuicone" onclick="menuAbrir()">
+                <button><img src="img/assets/menu.png" alt=""></button>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html"><h1>PROJETTUS</h1></a>
+            </div>
+
+            <div>
+                <button class="botaologin" onclick="menuLoginAbrir()"><a href="#"><img src="img/assets/pessoa.png" alt="" class="imgdim"></a></button>
+            </div>
+
+        </nav>
+        <div class="menusuperior">
+            <ul>
+                <h2>MENU</h2>
+                <div class="linhasuperior"></div>
+                <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+                <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+                <li class="navitem"><a href="#" class="navlink">Historico</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="pedidosatuais">
+                <h1>Lista de Pedidos Atuais</h1>
+                <div onclick="abrirPedidosPendentesMenu()">
+                    <h1>Eduardo</h1>
+                    <p>Marcado para dia: 10/9/9999</p>
+                    <button>mais INFORMAÇÕES</button>
+                </div>
+                <div onclick="abrirPedidosPendentesMenu()">
+                    <h1>Igor</h1>
+                    <p>Marcado para dia: 10/9/9999</p>
+                    <button>mais INFORMAÇÕES</button>
+                </div>
+                <div onclick="abrirPedidosPendentesMenu()">
+                    <h1>Ana</h1>
+                    <p>Marcado para dia: 10/9/9999</p>
+                    <button>mais INFORMAÇÕES</button>
+                </div>
+        </section>
+        <section>
+            <div class="conteudoclientefreelancer">
+                <div>
+                    <div class="informacoesfreelancer">
+                        <h1>Informações do freelancer</h1>
+                        <div class="linhahorizontalcentral"></div>
+
+                        <div class="listarconteiner">
+                            <img src="img/login/boasvindas.png" alt="">
+                        </div>
+                        
+
+                        <p>Eduardo</p>
+                        <p>Programador</p>
+                        <p>Brasil</p>
+                        <p>Portugues</p>
+                        <p>descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusamus. Temporibus, impedit magni? Vel accusantium pariatur atque neque ut, nemo a modi repellendus illo repudiandae! Commodi culpa distinctio dolores totam. </p>
+                        <div class="linhahorizontalcentral"></div>
+                        <h4>Status do Pedido</h4>
+                        <button>Aceito</button>
+                    </div>
+                    <div class="conteudoclientefreelancerlateral">
+                        <div class="conteudoclientefreelancerlateraldiv1">
+                            <h1>Serviço</h1>
+                        </div>
+                        <div class="conteudoclientefreelancerlateraldiv2">
+                            <div>
+                                <h2>Você</h2>
+                                <p>Aqui tera uma breve descrição do problema que o cliente precisa resolver com máximo de informações possíveis do problema, anexar imagem do problema caso tenha como, etc.” também conterá nome do cliente localização”</p>
+                                <div>
+                                    <button class="botaoclientefreelancer ">Salvar</button>
+                                    <button class="botaoclientefreelancer ">Editar</button>
+                                    <button class="botaoclientefreelancer ">Cancelar</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Freelancer</h2>
+                                <p>Aqui tera algo falando sobre custo adicional devido ao problema indicado pelo usuário e horário que o freelancer tem disponível, além de ter algo indicando se o freelancer aceitou o trabalho após ler a descrição do cliente, etc...tera 3 estados: <br> verde: PEDIDO ACEITO <br> amarelo: PEDIDO PENDENTE <br> vermelho: PEDIDO RECUSADO</p>
+                                <div>
+                                    <button class="botaoclientefreelancer ofertaaceita">Aceitar Oferta</button>
+                                    <button onclick="abrirPedidosPendentesMenu()" class="botaoclientefreelancer ofertarecusada">Recusar Oferta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cadastromenu">
+            <div>
+                <h2>Cadastre-se</h2>
+                <form action="">
+                    <div>
+                        <label for="login">LOGIN</label>
+                        <input type="login" name="login" id="login">
+                    </div>
+                    <div>
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confsenha">CONFIRMAR A SENHA</label>
+                        <input type="confsenha" name="confsenha" id="confsenha">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+            </div>
+            </form>
+
+        </section>
+
+        <section class="loginmenu">
+            <div>
+                <div class="loginimg">
+                    <img src="img/login/boasvindas.png" alt="">
+                </div>
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div>
+                            <label for="login">E-MAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="senha">SENHA</label>
+                            <input type="senha" name="senha" id="senha">
+                        </div>
+                        <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                        <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                        <div>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
